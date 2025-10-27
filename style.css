@@ -67,6 +67,23 @@ footer {
     background-color: #ffe4e6;
 }
 
+.password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.password-container input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
