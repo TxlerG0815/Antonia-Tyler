@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #fff0f5;
+    background: linear-gradient(to bottom right, #fff5f5, #ffeaea); /* sanfter Rot-Verlauf */
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #e63946;
+    background-color: #e63946; /* kräftiges Rot */
     color: white;
     padding: 2rem 1rem;
     animation: fadeIn 2s ease-in;
@@ -42,7 +42,7 @@ section {
 }
 
 button {
-    background-color: #e63946;
+    background-color: #e63946; /* kräftiges Rot */
     color: white;
     border: none;
     padding: 0.7rem 1.2rem;
@@ -53,13 +53,13 @@ button {
 }
 
 button:hover {
-    background-color: #f87171;
+    background-color: #f87171; /* helleres Rot beim Hover */
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #ffe4e6;
+    background-color: #ffe4e6; /* leicht rosa/rot, passt zu Rot */
 }
 
 /* Animationen */
