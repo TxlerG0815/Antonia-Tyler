@@ -3,48 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Webpage für Antonia💖</title>
+    <title>Webpage für Antonia💖</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1> 4 Jahre Antonia & Tyler</h1>
-    </header>
-    <main>
-        <section class="about">
-            <p>Hier habe ich ein paar schöne Dinge für dich zusammengestellt.</p>
-        </section>
+    <div id="password-container" class="password-container">
+        <h2>Gib das Passwort ein 💖</h2>
+        <input type="password" id="password" placeholder="Passwort">
+        <button onclick="checkPassword()">Einloggen</button>
+    </div>
 
-        <section class="gallery">
-            <h2>Galerie</h2>
-            <div class="gallery-grid">
-                <img src="bilder/foto1.jpg" alt="Foto 1">
-                <img src="bilder/foto2.jpg" alt="Foto 2">
-                <img src="bilder/foto3.jpg" alt="Foto 3">
-                <img src="bilder/foto4.jpg" alt="Foto 4">
-        <!-- hier kannst du beliebig viele Bilder hinzufügen -->
-            </div>
-        </section>
+    <div id="content" style="display: none;">
+        <header>
+            <h1>4 Jahre Antonia & Tyler</h1>
+        </header>
+        <main>
+            <section class="about">
+                <p>Hier habe ich ein paar schöne Dinge für dich zusammengestellt.</p>
+            </section>
 
-        <section class="message">
-            <p>Du bist einfach großartig, und ich wollte dir mit dieser Website eine Freude machen 😄💖</p>
-            <button onclick="showSurprise()">Touch Me </button>
-        </section>
-    </main>
+            <section class="gallery">
+                <h2>Galerie</h2>
+                <div class="gallery-grid">
+                    <img src="bilder/foto1.jpg" alt="Foto 1">
+                    <img src="bilder/foto2.jpg" alt="Foto 2">
+                    <img src="bilder/foto3.jpg" alt="Foto 3">
+                    <img src="bilder/foto4.jpg" alt="Foto 4">
+                </div>
+            </section>
 
-    <footer>
-        <p>Ich hoffe dass wir noch ganz lange miteinander leben 🐧</p>
-    </footer>
+            <section class="message">
+                <p>Du bist einfach großartig, und ich wollte dir mit dieser Website eine Freude machen 😄💖</p>
+                <button onclick="showSurprise()">Touch Me</button>
+            </section>
+        </main>
+
+        <footer>
+            <p>Ich hoffe, dass wir noch ganz lange miteinander leben 🐧</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
