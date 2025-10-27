@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passwortschutz</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #fff5f5, #ffeaea);
+      font-family: Arial, sans-serif;
+    }
+    .login-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    input {
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      width: 100%;
+    }
+    button {
+      padding: 0.7rem 1.2rem;
+      border: none;
+      background-color: #e63946;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Gib das Passwort ein 💖</h2>
+    <input type="password" id="password" placeholder="Passwort">
+    <button onclick="checkPassword()">Einloggen</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const pw = document.getElementById("password").value;
+      const richtigesPasswort = "penguin"; // hier änderst du dein Passwort
+
+      if (pw === richtigesPasswort) {
+        window.location.href = "index.html"; // leitet auf deine Seite weiter
+      } else {
+        alert("Falsches Passwort 🐧");
+      }
+    }
+  </script>
+</body>
+</html>
