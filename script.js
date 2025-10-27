@@ -15,5 +15,6 @@ function showSurprise() {
         heart.remove();
     }, 2000);
 
-    alert("🎉 Überraschung! Du bist toll! 💕");
+    alert("🎉 Überraschung! Du bist das Beste was mir je passiert ist 💕");
 }
+
