@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(to bottom right, #fff5f5, #ffeaea); /* sanfter Rot-Verlauf */
+    background: linear-gradient(to bottom right, #fff5f5, #ffeaea);
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 
 header {
     text-align: center;
-    background-color: #e63946; /* kräftiges Rot */
+    background-color: #e63946;
     color: white;
     padding: 2rem 1rem;
     animation: fadeIn 2s ease-in;
@@ -30,19 +30,24 @@ section {
     animation: fadeInUp 1.5s ease forwards;
 }
 
-.gallery img {
-    width: 45%;
-    margin: 0.5rem;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.gallery img:hover {
+.gallery-grid img:hover {
     transform: scale(1.05);
 }
 
 button {
-    background-color: #e63946; /* kräftiges Rot */
+    background-color: #e63946;
     color: white;
     border: none;
     padding: 0.7rem 1.2rem;
@@ -53,16 +58,15 @@ button {
 }
 
 button:hover {
-    background-color: #f87171; /* helleres Rot beim Hover */
+    background-color: #f87171;
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #ffe4e6; /* leicht rosa/rot, passt zu Rot */
+    background-color: #ffe4e6;
 }
 
-/* Animationen */
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -72,4 +76,3 @@ footer {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
 }
-
