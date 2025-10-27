@@ -1,5 +1,16 @@
+function checkPassword() {
+    const password = document.getElementById("password").value;
+    const richtigesPasswort = "Pinguin"; // <-- dein Passwort hier ändern!
+
+    if (password === richtigesPasswort) {
+        document.getElementById("password-container").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    } else {
+        alert("Falsches Passwort 🐧");
+    }
+}
+
 function showSurprise() {
-    // Kleine Animation: Herzchen fliegen
     const heart = document.createElement('div');
     heart.textContent = '💖';
     heart.style.position = 'fixed';
@@ -15,7 +26,6 @@ function showSurprise() {
         heart.remove();
     }, 2000);
 
-    alert("🐧Du bist das Beste was mir je passiert ist🐧");
+    alert("🐧Du bist das Beste, was mir je passiert ist🐧");
 }
-
 
